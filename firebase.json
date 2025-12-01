@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/routing/browser", /* Make sure there's no space here before deploying project so a new folder isn't created */
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

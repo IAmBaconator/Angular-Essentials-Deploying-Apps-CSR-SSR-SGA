@@ -31,3 +31,28 @@ Also, for some reason the codespace Angular setup seems to not include *Angular 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Static Hosting Information
+
+Firebase is a recommended free option to use with SPA type pages and offers options to extend the SPA deployment type.
+1. Sign in / Create Account using Google Email
+2. Click Console
+2. Get Started with a new project.
+3. Choose Hosting from the projects navigational.
+4. Static Website -> choose Get started.
+5. Will provide an, Install Firebase CLI command to install on your code project.
+6. Will send your through various commands that require setup through your Google account & authentication to verify it's you connecting Firebase > Google > Code Project
+7. Example of the Firbase config setup...
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+✔ What do you want to use as your public directory? dist/routing/browser (which is setup after running your `ng build` command)
+✔ Configure as a single-page app (rewrite all urls to /index.html)? Yes
+✔ Set up automatic builds and deploys with GitHub? No (May want to explore this option at a later date)
+✔ File dist/routing/browser/index.html already exists. Overwrite? No
+i  Skipping write of dist/routing/browser/index.html
+
+8. Before using the Firebase deploy command, check the firebase.json file to ensure the public value does not have a space and is pointing to the correct directory of your production folder (ist/routing/browser).
+9. Deploy & review provided URL
